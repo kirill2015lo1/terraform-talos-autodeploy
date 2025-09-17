@@ -13,7 +13,7 @@ resource "proxmox_virtual_environment_vm" "node" {
   tags      = var.tags
   bios      = var.bios
   name      = var.name
-
+  stop_on_destroy = var.stop_on_destroy
   agent {
     # read 'Qemu guest agent' section, change to true only when ready
     enabled = var.agent_enabled

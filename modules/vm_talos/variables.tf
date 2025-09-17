@@ -238,3 +238,9 @@ variable "kubernetes_version" {
   type        = string
   default     = "1.31.4"
 }
+
+variable "stop_on_destroy" {
+  description = "Stop on destroy"
+  type        = bool
+  default     = true
+}

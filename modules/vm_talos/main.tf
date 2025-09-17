@@ -29,6 +29,7 @@ module "node" {
   cpu_sockets       = var.cpu_sockets
   disk_backup       = var.disk_backup
   disk_interface    = var.disk_interface
+  stop_on_destroy   = var.stop_on_destroy
 }
 
 # create talos config and apply it

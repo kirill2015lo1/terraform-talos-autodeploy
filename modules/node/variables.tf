@@ -74,3 +74,8 @@ variable "agent_enabled" {
   type        = bool
 }
 
+
+variable "stop_on_destroy" {
+  description = "Stop on destroy"
+  type        = bool
+}
